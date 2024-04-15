@@ -1,0 +1,22 @@
+header{
+  background: #202020;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #393939;
+  h1{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: -2.4px;
+    font-size: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #ec1d24;
+    padding: 0px 10px;
+  }
+  h3{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+  }
+}
