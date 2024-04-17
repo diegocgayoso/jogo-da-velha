@@ -16,7 +16,6 @@ export class SearchCharacterService {
   }
   constructor(private http: HttpClient) { }
   searchCharacter(value: string) {
-    return this.http.get<Marvel>(`${this.environment.urlApi}nameStartsWith=${value}&ts=${this.environment.tsKey}&apikey=${this.environment.publicApiKey}&hash=${this.environment.privateApiKey}`);
-
+    return this.http.get<Marvel>(`${this.environment.urlApi}nameStartsWith=${value}&limit=10&ts=${this.environment.tsKey}&apikey=${this.environment.publicApiKey}&hash=${this.environment.privateApiKey}`);
   }
 }

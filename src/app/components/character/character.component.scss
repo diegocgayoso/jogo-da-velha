@@ -1,0 +1,22 @@
+:host{
+  display: inline-block;
+}
+.character {
+  height: auto;
+  width: 100px;
+  background: black;
+  img {
+    width: 100%;
+    border-bottom: 5px solid red;
+  }
+  .content {
+    height: 100px;
+    color: red;
+    padding: 12px 0.5rem;
+    position: relative;
+    transition: color .3s;
+    p {
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
+}

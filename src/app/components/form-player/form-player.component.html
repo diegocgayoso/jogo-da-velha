@@ -1,6 +1,15 @@
-<form [formGroup]="form" (ngSubmit)="search(form)">
-
-  <input type="text" name="player1" id="player1" formControlName="namePlayer1Ctrl" placeholder="Jogador 1">
-  <button type="submit">Selecionar</button>
+<form [formGroup]="formPlayers">
+  <app-input
+    label="Jogador 1"
+    (nameSearch)="search($event)"
+    formControlName="firstPlayer">
+  </app-input>
+  <app-input label="Jogador 2" (nameSearch)="search($event)" formControlName="secondPlayer"></app-input>
 </form>
+<div class="listChars">
+  @for(char of charFound; track $index){
+    <app-character [characterDetails]="char" (click)="characterSelected(char)"></app-character>
+  }
+</div>
+
 

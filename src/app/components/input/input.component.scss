@@ -1,0 +1,31 @@
+.input{
+
+  label{
+    color: white;
+
+  }
+  input {
+    margin: 1rem 0;
+    height: 50px;
+    border: 1px solid grey;
+    background: transparent;
+    padding-left: 1rem;
+    color: white;
+    ::placeholder {
+      color: white;
+    }
+  }
+  button{
+    @extend input;
+    border-left: none;
+    padding-right: 1rem;
+    transition: ease-in-out .3s;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    line-height: 2;
+    &:hover{
+      background: red;
+      color: black;
+    }
+  }
+}

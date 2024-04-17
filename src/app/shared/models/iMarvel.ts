@@ -52,7 +52,7 @@ export interface Stories {
 export interface StoriesItem {
   resourceURI: string;
   name:        string;
-  type:        Type;
+  // type:        Type;
 }
 
 export enum Type {
